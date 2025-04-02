@@ -28,15 +28,19 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  background-color: #f0f0f0;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   min-height: 100vh;
+  display: block; /* Changer de flex à block */
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+h2, h3, h4, h5, h6, p {
+  color: black;
 }
 
 button {
@@ -69,4 +73,24 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Centrer le conteneur des modules avec Flexbox */
+.modules-container {
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  gap: 2rem; /* Espacement entre les modules */
+  flex-wrap: wrap; /* Pour permettre aux modules de passer à la ligne si l'écran est petit */
+  padding: 2rem; /* Espacement autour du conteneur */
+}
+
+.module-card {
+  background-color: #ffffff;
+  color: var(--text-dark);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px; /* Largeur des modules */
+  text-align: center;
 }
