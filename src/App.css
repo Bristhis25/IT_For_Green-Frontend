@@ -1,18 +1,12 @@
 @media screen and (max-width: 400px) {
-  #features {
+  #a_propos {
     padding: 20px;
     width: 111%;
   }
   #about,
   #services,
-  #testimonials,
-  #team,
   #contact,
   #footer {
     width: 111%;
-  }
-
-  #portfolio {
-    width: 110%;
   }
 }
